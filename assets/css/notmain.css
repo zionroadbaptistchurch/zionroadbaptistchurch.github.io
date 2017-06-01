@@ -1263,7 +1263,7 @@ a {
     -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
-    color: #666666;
+    color: #86bf78;
     text-decoration: none;
     border-bottom: dotted 1px;
 }
@@ -1745,8 +1745,8 @@ input[type="button"].special, input[type="submit"].special, input[type="reset"].
 }
 
 input[type="button"].special:hover, input[type="submit"].special:hover, input[type="reset"].special:hover, .button.special:hover {
-    background: #666666 !important;
-    border-color: #666666 !important;
+    background: #a7dc9b !important;
+    border-color: #a7dc9b !important;
 }
 
 input[type="button"].fit, input[type="submit"].fit, input[type="reset"].fit, .button.fit {
@@ -1809,6 +1809,42 @@ input[type="button"].small, input[type="submit"].small, input[type="reset"].smal
 
 /* Header */
 
+@-moz-keyframes reveal-header {
+    0% {
+        top: -5em;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-webkit-keyframes reveal-header {
+    0% {
+        top: -5em;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@-ms-keyframes reveal-header {
+    0% {
+        top: -5em;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes reveal-header {
+    0% {
+        top: -5em;
+    }
+    100% {
+        top: 0;
+    }
+}
+
 #header {
     position: fixed;
     top: 0;
@@ -1816,7 +1852,7 @@ input[type="button"].small, input[type="submit"].small, input[type="reset"].smal
     width: 100%;
     height: 4.5rem;
     line-height: 4.5rem;
-    background-color: rgba(255, 255, 255, .85);
+    background-color: #ffffff;
     box-shadow: 0 0 0.5rem 0 rgba(161, 177, 204, 0.325);
     cursor: default;
     z-index: 10000;
@@ -1830,13 +1866,13 @@ input[type="button"].small, input[type="submit"].small, input[type="reset"].smal
 }
 
 #header a:hover {
-    color: #666666;
+    color: #6e9e64;
 }
 
 #header>.logo {
     position: absolute;
     top: 0;
-    left: 5rem;
+    left: 2rem;
     text-transform: uppercase;
 }
 
@@ -1892,14 +1928,15 @@ input[type="button"].small, input[type="submit"].small, input[type="reset"].smal
     left: 0;
     width: 100%;
     height: 3px;
+    background-image: linear-gradient(90deg, #71aca0, #efc278);
 }
 
 #header>nav>ul>li.current>a {
-    color: #666666;
+    color: #6e9e64;
 }
 
 #header>nav>ul>li.active>a {
-    color: #666666;
+    color: #6e9e64;
 }
 
 
@@ -1998,16 +2035,13 @@ input[type="button"].small, input[type="submit"].small, input[type="reset"].smal
 #banner {
     background-attachment: scroll, scroll, scroll, fixed;
     background-color: #645862;
-    background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/dove-cross.jpg");
+    background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/banner.jpg");
     background-position: bottom left, bottom right, top left, top center;
     background-repeat: no-repeat, no-repeat, repeat, no-repeat;
     background-size: 25em, 25em, auto, cover;
     color: #fff;
     cursor: default;
-    padding-top: 8em;
-    padding-bottom: 4.5em;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 6em 0;
     text-align: center;
 }
 
@@ -2020,10 +2054,10 @@ input[type="button"].small, input[type="submit"].small, input[type="reset"].smal
     -webkit-animation-fill-mode: forwards;
     -ms-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    background: rgba(52, 27, 43, 0.75);
+    background: rgba(52, 27, 43, 0.5);
     color: #fff;
     display: inline-block;
-    opacity: .5;
+    opacity: 0;
     padding: 3em;
     text-align: center;
 }
@@ -2190,7 +2224,8 @@ body.index #main {
         padding: 3em;
     }
     /* Header */
-
+    #header nav ul li {
+        margin-left: 1em;
     }
     /* Banner */
     #banner {
@@ -2319,7 +2354,8 @@ body.index #main {
         padding: 1em 0 0 0;
     }
     /* Header */
-
+    #header {
+        display: none;
     }
     /* Banner */
     #banner {
