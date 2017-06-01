@@ -1578,7 +1578,6 @@ input[type="text"], input[type="password"], input[type="email"] {
     cursor: default;
     display: block;
     margin: 0 0 1.5em 0;
-    opacity: 0.35;
     text-align: center;
 }
 
