@@ -2389,7 +2389,7 @@ body.index #main {
         left: 0;
         position: absolute;
         text-align: center;
-        top: 0;
+        top: .34em;
         width: 100%;
         border: 0;
         outline: 0;
@@ -2403,20 +2403,20 @@ body.index #main {
         text-transform: none !important;
     }
     #navButton .toggle:before {
-        color: #fff;
-        content: '\f0c9';
-        font-size: 1em;
+        content: 'MENU';
+        color: #7c8081;
+        font-family: 'Lato', sans-serif;
+        font-size: 13pt;
         height: 40px;
         left: 10px;
         line-height: 40px;
-        opacity: 0.5;
         position: absolute;
         top: 11px;
         width: 60px;
         z-index: 1;
     }
     #navButton .toggle:after {
-        background: rgba(163, 169, 170, 0.75);
+        background: rgba(163, 169, 170, 0.3);
         border-radius: 2px;
         content: '';
         height: 40px;

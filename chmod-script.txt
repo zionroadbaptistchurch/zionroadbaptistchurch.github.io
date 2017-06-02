@@ -1,0 +1,5 @@
+Changes permissions for folders: 
+find /home/jim/zionroadbaptistchurch.github.io/ -type d -exec chmod 777 {} \;
+
+Changes permissions for files:
+find /home/jim/zionroadbaptistchurch.github.io/ -type f -exec chmod 777 {} \;
