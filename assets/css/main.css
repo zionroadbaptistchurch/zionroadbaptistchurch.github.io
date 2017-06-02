@@ -2011,10 +2011,10 @@ input[type="button"].small, input[type="submit"].small, input[type="reset"].smal
 }
 
 #banner .inner {
-    -moz-animation: reveal-banner 1s 0.25s ease-in-out;
-    -webkit-animation: reveal-banner 1s 0.25s ease-in-out;
-    -ms-animation: reveal-banner 1s 0.25s ease-in-out;
-    animation: reveal-banner 1s 0.25s ease-in-out;
+    -moz-animation: reveal-banner 3s 0s ease;
+    -webkit-animation: reveal-banner 3s 0s ease;
+    -ms-animation: reveal-banner 3s 0s ease;
+    animation: reveal-banner 3s 0s ease;
     -moz-animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     -ms-animation-fill-mode: forwards;
