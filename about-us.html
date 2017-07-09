@@ -55,8 +55,38 @@
 				<!-- Content -->
 				<div class="content">
 					<section>
-						<a href="#" class="image featured"><img src="images/dove-cross.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="images/church1.jpg"/></a>
+								<a href="#" class="image featured"><img src="images/dove-cross.jpg"/></a>
+
+								<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+								<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+								<script language="javascript">
+									var slideIndex = 1;
+									showDivs(slideIndex);
+
+									function plusDivs(n) {
+										showDivs(slideIndex += n);
+									}
+
+									function showDivs(n) {
+										var i;
+										var x = document.getElementsByClassName("image featured");
+										if (n > x.length) {
+											slideIndex = 1
+										}
+										if (n < 1) {
+											slideIndex = x.length
+										};
+										for (i = 0; i < x.length; i++) {
+											x[i].style.display = "none";
+										}
+										x[slideIndex - 1].style.display = "block";
+									}
+								</script>
+						</section>
 						<header>
+							<br>
 							<h3><strong>About our Church</strong><h3>
 							</header>
 							<p>Zion Road Independent Baptist Church was founded in May 2004 by Pastor Henry Juma and Pastor Michael Mestler. We are part of a fellowship of Baptist Churches ministering in Kenya since 1965. we preach and teach the Bible as God's Inspired word which has answers to all of life's questions.
