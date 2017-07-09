@@ -55,81 +55,84 @@
 				<!-- Content -->
 				<div class="content">
 					<section>
-								<a href="#" class="image featured"><img src="images/church1.jpg"/></a>
-								<a href="#" class="image featured"><img src="images/dove-cross.jpg"/></a>
+						<a href="#" class="image featured"><img src="images/church1.jpg"/></a>
+						<a href="#" class="image featured"><img src="images/dove-cross.jpg"/></a>
 
-								<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-								<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+						<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+						<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 
-								<script language="javascript">
-									var slideIndex = 1;
-									showDivs(slideIndex);
+						<script language="javascript">
+							var slideIndex = 1;
+							showDivs(slideIndex);
 
-									function plusDivs(n) {
-										showDivs(slideIndex += n);
-									}
+							function plusDivs(n) {
+								showDivs(slideIndex += n);
+							}
 
-									function showDivs(n) {
-										var i;
-										var x = document.getElementsByClassName("image featured");
-										if (n > x.length) {
-											slideIndex = 1
-										}
-										if (n < 1) {
-											slideIndex = x.length
-										};
-										for (i = 0; i < x.length; i++) {
-											x[i].style.display = "none";
-										}
-										x[slideIndex - 1].style.display = "block";
-									}
-								</script>
-						</section>
-						<header>
-							<br>
-							<h3><strong>About our Church</strong><h3>
+							function showDivs(n) {
+								var i;
+								var x = document.getElementsByClassName("image featured");
+								if (n > x.length) {
+									slideIndex = 1
+								}
+								if (n < 1) {
+									slideIndex = x.length
+								};
+								for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";
+								}
+								x[slideIndex - 1].style.display = "block";
+							}
+						</script>
+					</section>
+					<header>
+						<br>
+						<h3><strong>About our Church</strong><h3>
 							</header>
 							<p>Zion Road Independent Baptist Church was founded in May 2004 by Pastor Henry Juma and Pastor Michael Mestler. We are part of a fellowship of Baptist Churches ministering in Kenya since 1965. we preach and teach the Bible as God's Inspired word which has answers to all of life's questions.
 						<header>
+
 							<h3><strong>Statements of Faith</strong></h3>
-						</header>
-						<ul>
-							<p2>
-								<li>Scripture:
-									<br>We believe that the 66 books of the Old and New Testaments are verbally inspired in their entirety; that the original copies contain complete truth; that they are without errors or contradictions; and that they are God's full revelation to
-									man and his sole authority for faith and practice.</li>
-								</p>
-								<p>
-									<li>God:
-										<br>We believe that there is one God who exists in three persons: the Father, the Son and the Holy Spirit, and that they are one in essence and co-eternal/co-equal in every divine attribute.</li>
-								</p>
-								<p>
-									<li>Jesus Christ:
-										<br>We believe that Jesus Christ ws conceived of the Holy Spirit, born of a virgin, lived a sinless life, died a substitutionary death (in our place), arose bodily from the grave, ascended to heaven, now intercedes for believers, and will come
-										again in a <a href="http://www.millersvillebiblechurch.org/_files/live/Pretribulational%20Premillennial%20View%20of%20the%20End%20Times.pdf">pre-tribulational, pre-millenial appearing.</a></li>
-								</p>
-								<p>
-									<li>The Holy Spirit:
-										<br>We believe that the Holy Spirit is the Person in the Godhead who restrains evil, convicts of sin, bears witness to the truth of the Gospel in preaching and testimony, the agent in the new birth, indwells the believer, baptizes into the body
-										of Christ, and fills believers for spiritual service. We believe that the gifts of tongues, the special gift of healing and sign miracles were temporary and not for this age, although God may heal the sick and afflicted in accrod with His own
-										will.
-									</li>
-								</p>
-								<p>
-									<li>Salvation:
-										<br>We believe that salvation is by grace through faith in the finished work of Christ, by which work Christ fully satisfied the just demands of a holy and righteous God; and that believers are kept by the power of God and that the mark of genuine
-										salvation is their perseverance to the end.
-									</li>
-								</p>
-						</ul>
-					</section>
-				</div>
+					</header>
+					<!--
+					<ul>
+						<p>
+							<li>Scripture:
+								<br>We believe that the 66 books of the Old and New Testaments are verbally inspired in their entirety; that the original copies contain complete truth; that they are without errors or contradictions; and that they are God's full revelation to
+								man and his sole authority for faith and practice.</li>
+						</p>
+						<p>
+							<li>God:
+								<br>We believe that there is one God who exists in three persons: the Father, the Son and the Holy Spirit, and that they are one in essence and co-eternal/co-equal in every divine attribute.</li>
+						</p>
+						<p>
+							<li>Jesus Christ:
+								<br>We believe that Jesus Christ ws conceived of the Holy Spirit, born of a virgin, lived a sinless life, died a substitutionary death (in our place), arose bodily from the grave, ascended to heaven, now intercedes for believers, and will come
+								again in a <a href="http://www.millersvillebiblechurch.org/_files/live/Pretribulational%20Premillennial%20View%20of%20the%20End%20Times.pdf">pre-tribulational, pre-millenial appearing.</a></li>
+						</p>
+						<p>
+							<li>The Holy Spirit:
+								<br>We believe that the Holy Spirit is the Person in the Godhead who restrains evil, convicts of sin, bears witness to the truth of the Gospel in preaching and testimony, the agent in the new birth, indwells the believer, baptizes into the body
+								of Christ, and fills believers for spiritual service. We believe that the gifts of tongues, the special gift of healing and sign miracles were temporary and not for this age, although God may heal the sick and afflicted in accrod with His own
+								will.
+							</li>
+						</p>
+						<p>
+							<li>Salvation:
+								<br>We believe that salvation is by grace through faith in the finished work of Christ, by which work Christ fully satisfied the just demands of a holy and righteous God; and that believers are kept by the power of God and that the mark of genuine
+								salvation is their perseverance to the end.
+							</li>
+						</p>
+					</ul>
+				-->
+			</section>
+			</div>
 
 			</section>
 
 			<!-- Footer -->
 			<footer id="footer">
-<!--
+				<!--
 				<ul class="icons">
 					<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
