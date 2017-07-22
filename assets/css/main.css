@@ -2686,3 +2686,7 @@ body.navPanel-visible #navPanel {
         height: 34px;
     }
 }
+
+section.special1, article.special1 {
+    text-align: left;
+}
